@@ -14,11 +14,11 @@ bar=xxx
 ```
 Then we can parse it to an object.
 ```js
-const pareseKvFile = require("../index.js");
+const parseKvFile = require('parse-kv-file');
 
 const fileStr = `foo=xxx
 bar=xxx`
 
-console.log(pareseKvFile(fileStr));
+console.log(parseKvFile(fileStr));
 // { foo: 'xxx', bar: 'xxx' }
 ```
